@@ -23,6 +23,24 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Tailwind Customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "bg-color": "#F85559",
+            },
+            backgroundImage: {
+              "slider1-bg": "url('./images/banner1.png')",
+              "slider2-bg": "url('./images/banner2.png')",
+              "slider3-bg": "url('./images/banner3.png')",
+              "slider4-bg": "url('./images/banner4.png')",
+            },
+          },
+        },
+      };
+    </script>
     <style>
       .font-lato {
         font-family: "Lato", sans-serif;
@@ -30,8 +48,8 @@
     </style>
   </head>
   <body class="font-lato">
-    <header class="container mx-auto mt-12">
-      <div class="navbar md:bg-red-500 rounded-[600px] md:px-12">
+    <header class="container mx-auto mt-12 p-3">
+      <div class="navbar md:bg-bg-color rounded-[600px] md:px-12">
         <div class="navbar-start hidden lg:flex">
           <ul class="menu menu-horizontal px-1 md:text-white py-9">
             <li class="text-xl font-normal"><a>Home</a></li>
@@ -42,9 +60,9 @@
         </div>
         <div class="navbar-center">
           <div class="flex justify-center items-center">
-            <img class="md:w-14 md:h-16" src="./images/logo.png" alt="" />
+            <img class="lg:w-14 lg:h-16" src="./images/logo.png" alt="" />
             <a
-              class="btn btn-ghost normal-case text-xl md:text-2xl lg:text-4xl md:font-bold md:text-white"
+              class="btn btn-ghost normal-case text-xl md:text-xl lg:text-3xl md:font-bold md:text-white"
               >Fruit Burst</a
             >
           </div>
@@ -98,5 +116,248 @@
         </div>
       </div>
     </header>
+    <main>
+      <!-- Banner section -->
+      <section class="mt-5 md:mt-10 container mx-auto font-lato p-3">
+        <div class="carousel w-full">
+          <!-- slide-1 -->
+          <div
+            id="slide1"
+            class="carousel-item relative w-full bg-slider1-bg bg-cover bg-no-repeat min-h-[calc(100vh-200px)]"
+          >
+            <!-- <img src="./images/banner1.png" class="w-full" /> -->
+            <div class="flex justify-center items-center mx-auto text-center">
+              <div class="text-white space-y-2 lg:space-y-6">
+                <h2 class="text-2xl lg:text-7xl font-black">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h2>
+                <p class="text-sm lg:text-xl">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="btn border-none text-white text-lg font-bold bg-bg-color px-6 py-3 normal-case"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide-2 -->
+          <div
+            id="slide2"
+            class="carousel-item relative w-full bg-slider2-bg bg-cover bg-no-repeat min-h-[calc(100vh-300px)]"
+          >
+            <!-- <img src="./images/banner1.png" class="w-full" /> -->
+            <div class="flex justify-center items-center mx-auto text-center">
+              <div class="text-white space-y-2 lg:space-y-6">
+                <h2 class="text-2xl lg:text-7xl font-black">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h2>
+                <p class="text-sm lg:text-xl">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="btn border-none text-white text-lg font-bold bg-bg-color px-6 py-3 normal-case"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide-3 -->
+          <div
+            id="slide3"
+            class="carousel-item relative w-full bg-slider3-bg bg-cover bg-no-repeat min-h-[calc(100vh-300px)]"
+          >
+            <!-- <img src="./images/banner1.png" class="w-full" /> -->
+            <div class="flex justify-center items-center mx-auto text-center">
+              <div class="text-white space-y-2 lg:space-y-6">
+                <h2 class="text-2xl lg:text-7xl font-black">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h2>
+                <p class="text-sm lg:text-xl">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="btn border-none text-white text-lg font-bold bg-bg-color px-6 py-3 normal-case"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide-4 -->
+          <div
+            id="slide4"
+            class="carousel-item relative w-full bg-slider4-bg bg-cover bg-no-repeat min-h-[calc(100vh-300px)]"
+          >
+            <!-- <img src="./images/banner1.png" class="w-full" /> -->
+            <div class="flex justify-center items-center mx-auto text-center">
+              <div class="text-white space-y-2 lg:space-y-6">
+                <h2 class="text-2xl lg:text-7xl font-black">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h2>
+                <p class="text-sm lg:text-xl">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="btn border-none text-white text-lg font-bold bg-bg-color px-6 py-3 normal-case"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white border-none"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Deal of the Day Section -->
+      <section class="mt-5 md:mt-10 container mx-auto font-lato p-3">
+        <div class="flex justify-between flex-col md:flex-row">
+          <div class="flex-1">
+            <!-- First div -->
+            <h2 class="text-5xl font-bold">Deal of the day</h2>
+            <p>
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <div class="flex-1">
+            <!-- second div -->
+            <div
+              class="grid grid-flow-col gap-2 text-center auto-cols-max md:justify-end mx-auto"
+            >
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl font-black">
+                  <span style="--value: 15"></span>
+                </span>
+                days
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-8 mt-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                />
+              </svg>
+
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl font-black">
+                  <span style="--value: 10"></span>
+                </span>
+                hours
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-8 mt-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                />
+              </svg>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl font-black">
+                  <span style="--value: 24"></span>
+                </span>
+                min
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-8 mt-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                />
+              </svg>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl font-black">
+                  <span style="--value: 28"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
