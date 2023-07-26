@@ -47,21 +47,15 @@
       }
       .hero {
         position: relative;
-        /* Add the following line to set the dark shade of background */
         background-color: rgba(18, 18, 18, 0.7);
-        /* The rest of your existing styles for .hero */
       }
-
-      /* If you want to target the overlay specifically, you can add the following style */
       .hero-overlay {
-        /* Adjust the opacity or color as needed */
         background-color: rgba(18, 18, 18, 0.7);
-        /* The rest of your existing styles for .hero-overlay */
       }
     </style>
   </head>
   <body class="font-lato">
-    <header class="container mx-auto mt-12 p-3">
+    <header class="container mx-auto mt-8 p-3">
       <div class="navbar md:bg-bg-color rounded-[600px] md:px-12">
         <div class="navbar-start hidden lg:flex">
           <ul class="menu menu-horizontal px-1 md:text-white py-9">
@@ -131,28 +125,29 @@
     </header>
     <main class="font-lato">
       <!-- Banner section -->
-      <section class="mt-5 md:mt-10 container mx-auto p-3">
-        <div class="carousel">
-          <!-- slide-1 -->
-          <div
-            id="slide1"
-            class="carousel-item mx-auto relative w-full bg-slider1-bg bg-cover bg-no-repeat bg-center md::min-h-[calc(100vh-100px)]"
-          >
-            <!-- <img src="./images/banner1.png" class="w-full" /> -->
-            <div class="flex justify-center items-center mx-auto text-center">
-              <div class="text-white space-y-2 lg:space-y-6">
-                <h2 class="text-2xl lg:text-7xl font-black">
-                  Exotic tastes at your <br />
-                  doorstep
-                </h2>
-                <p class="text-sm lg:text-xl">
-                  We supply highly quality organic products
-                </p>
-                <button
-                  class="btn border-none text-white text-lg font-bold bg-bg-color px-6 py-3 normal-case"
-                >
-                  Shop Now
-                </button>
+      <section class="mt-4 md:mt-8 container mx-auto p-3">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div
+              class="hero h-[300px] lg:h-[600px] rounded-lg"
+              style="background-image: url(./images/banner1.png)"
+            >
+              <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="text-white space-y-2 lg:space-y-6">
+                  <h2 class="text-2xl lg:text-7xl font-black">
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h2>
+                  <p class="text-sm lg:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn border-none text-white text-lg font-bold bg-bg-color px-6 py-3 normal-case"
+                  >
+                    Shop Now
+                  </button>
+                </div>
               </div>
             </div>
             <div
@@ -170,26 +165,27 @@
               >
             </div>
           </div>
-          <!-- slide-2 -->
-          <div
-            id="slide2"
-            class="carousel-item relative w-full bg-slider2-bg bg-cover bg-no-repeat min-h-[calc(100vh-300px)]"
-          >
-            <!-- <img src="./images/banner1.png" class="w-full" /> -->
-            <div class="flex justify-center items-center mx-auto text-center">
-              <div class="text-white space-y-2 lg:space-y-6">
-                <h2 class="text-2xl lg:text-7xl font-black">
-                  Exotic tastes at your <br />
-                  doorstep
-                </h2>
-                <p class="text-sm lg:text-xl">
-                  We supply highly quality organic products
-                </p>
-                <button
-                  class="btn border-none text-white text-lg font-bold bg-bg-color px-6 py-3 normal-case"
-                >
-                  Shop Now
-                </button>
+          <div id="slide2" class="carousel-item relative w-full">
+            <div
+              class="hero h-[300px] lg:h-[600px] rounded-lg"
+              style="background-image: url(./images/banner2.png)"
+            >
+              <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="text-white space-y-2 lg:space-y-6">
+                  <h2 class="text-2xl lg:text-7xl font-black">
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h2>
+                  <p class="text-sm lg:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn border-none text-white text-lg font-bold bg-bg-color px-6 py-3 normal-case"
+                  >
+                    Shop Now
+                  </button>
+                </div>
               </div>
             </div>
             <div
@@ -207,26 +203,27 @@
               >
             </div>
           </div>
-          <!-- slide-3 -->
-          <div
-            id="slide3"
-            class="carousel-item relative w-full bg-slider3-bg bg-cover bg-no-repeat min-h-[calc(100vh-300px)]"
-          >
-            <!-- <img src="./images/banner1.png" class="w-full" /> -->
-            <div class="flex justify-center items-center mx-auto text-center">
-              <div class="text-white space-y-2 lg:space-y-6">
-                <h2 class="text-2xl lg:text-7xl font-black">
-                  Exotic tastes at your <br />
-                  doorstep
-                </h2>
-                <p class="text-sm lg:text-xl">
-                  We supply highly quality organic products
-                </p>
-                <button
-                  class="btn border-none text-white text-lg font-bold bg-bg-color px-6 py-3 normal-case"
-                >
-                  Shop Now
-                </button>
+          <div id="slide3" class="carousel-item relative w-full">
+            <div
+              class="hero h-[300px] lg:h-[600px] rounded-lg"
+              style="background-image: url(./images/banner3.png)"
+            >
+              <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="text-white space-y-2 lg:space-y-6">
+                  <h2 class="text-2xl lg:text-7xl font-black">
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h2>
+                  <p class="text-sm lg:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn border-none text-white text-lg font-bold bg-bg-color px-6 py-3 normal-case"
+                  >
+                    Shop Now
+                  </button>
+                </div>
               </div>
             </div>
             <div
@@ -244,26 +241,27 @@
               >
             </div>
           </div>
-          <!-- slide-4 -->
-          <div
-            id="slide4"
-            class="carousel-item relative w-full bg-slider4-bg bg-cover bg-no-repeat min-h-[calc(100vh-300px)]"
-          >
-            <!-- <img src="./images/banner1.png" class="w-full" /> -->
-            <div class="flex justify-center items-center mx-auto text-center">
-              <div class="text-white space-y-2 lg:space-y-6">
-                <h2 class="text-2xl lg:text-7xl font-black">
-                  Exotic tastes at your <br />
-                  doorstep
-                </h2>
-                <p class="text-sm lg:text-xl">
-                  We supply highly quality organic products
-                </p>
-                <button
-                  class="btn border-none text-white text-lg font-bold bg-bg-color px-6 py-3 normal-case"
-                >
-                  Shop Now
-                </button>
+          <div id="slide4" class="carousel-item relative w-full">
+            <div
+              class="hero h-[300px] lg:h-[600px] rounded-lg"
+              style="background-image: url(./images/banner4.png)"
+            >
+              <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="text-white space-y-2 lg:space-y-6">
+                  <h2 class="text-2xl lg:text-7xl font-black">
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h2>
+                  <p class="text-sm lg:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn border-none text-white text-lg font-bold bg-bg-color px-6 py-3 normal-case"
+                  >
+                    Shop Now
+                  </button>
+                </div>
               </div>
             </div>
             <div
@@ -1128,7 +1126,7 @@
                       />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="text-2xl font-bold">Chaity</h2>
+                      <h2 class="text-2xl font-bold">Maria</h2>
                       <p>Fruits Expert</p>
                       <p>
                         <i class="fa-brands fa-facebook"></i>
@@ -1144,7 +1142,7 @@
         </div>
       </section>
       <!-- why choose us Section -->
-      <section class="md:mt-10 container mx-auto p-3">
+      <section class="md:mt-10 mb-10 container mx-auto p-3">
         <div class="text-center mb-8">
           <h2 class="text-3xl md:text-5xl font-black">Why Choose Us</h2>
           <p class="font-normal">
@@ -1283,5 +1281,36 @@
         </div>
       </section>
     </main>
+    <footer
+      class="footer footer-center p-10 bg-[#121212] text-base-content rounded"
+    >
+      <div class="flex justify-center items-center">
+        <img class="lg:w-14 lg:h-16" src="./images/logo.png" alt="" />
+        <a
+          class="btn btn-ghost normal-case text-xl md:text-xl lg:text-3xl md:font-bold text-white"
+          >Fruit Burst</a
+        >
+      </div>
+      <div class="flex flex-col gap-4 md:flex-row">
+        <div class="text-white space-x-4">
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">About</a>
+          <a class="link link-hover">Shop</a>
+          <a class="link link-hover">Chat</a>
+        </div>
+        <div class="space-x-4 text-white">
+          <a class="link link-hover">Account</a>
+          <a class="link link-hover">Call</a>
+        </div>
+      </div>
+      <div>
+        <div class="grid grid-flow-col gap-4 text-white">
+          <a><i class="fa-brands fa-instagram fa-2xl"></i></a>
+          <a><i class="fa-brands fa-twitter fa-2xl"></i></a>
+          <a><i class="fa-brands fa-apple fa-2xl"></i></a>
+          <a><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
