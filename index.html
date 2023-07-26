@@ -45,6 +45,19 @@
       .font-lato {
         font-family: "Lato", sans-serif;
       }
+      .hero {
+        position: relative;
+        /* Add the following line to set the dark shade of background */
+        background-color: rgba(18, 18, 18, 0.7);
+        /* The rest of your existing styles for .hero */
+      }
+
+      /* If you want to target the overlay specifically, you can add the following style */
+      .hero-overlay {
+        /* Adjust the opacity or color as needed */
+        background-color: rgba(18, 18, 18, 0.7);
+        /* The rest of your existing styles for .hero-overlay */
+      }
     </style>
   </head>
   <body class="font-lato">
@@ -271,7 +284,7 @@
         </div>
       </section>
       <!-- Deal of the Day Section -->
-      <section class="mt-5 md:mt-10 container mx-auto font-lato p-3">
+      <section class="mt-5 md:mt-10 container mx-auto p-3">
         <div
           class="flex justify-between items-center flex-col md:flex-row mb-5"
         >
@@ -999,6 +1012,111 @@
         </button>
       </section>
       <!-- Meet the team section -->
+      <section class="mt-5 md:mt-10 container mx-auto p-3 py-28">
+        <div
+          class="hero min-h-[calc(100vh-50px)] container mx-auto"
+          style="background-image: url(./images/team.png)"
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="flex flex-col justify-center items-center">
+              <div class="max-w-md text-center">
+                <h1 class="mb-5 text-xl md:text-5xl font-bold">
+                  Meet the team section
+                </h1>
+                <p class="mb-5 font-medium text-sm">
+                  Contrary to popular belief, is not simply random text. It has
+                  roots in a piece of classical Latin literature from 45 BC,
+                  making it over 2000 years old.
+                </p>
+              </div>
+              <!-- here card -->
+              <div>
+                <div
+                  class="grid gap-4 md:gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+                >
+                  <!-- card-1 -->
+                  <div class="card bg-transparent">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/member1.png"
+                        alt="Shoes"
+                        class="rounded-xl"
+                      />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="text-2xl font-bold">Awlad Hossain</h2>
+                      <p>Fruits Expert</p>
+                      <p>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter px-2"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- card-2 -->
+                  <div class="card bg-transparent">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/member2.png"
+                        alt="Shoes"
+                        class="rounded-xl"
+                      />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="text-2xl font-bold">Safia Chowdhury</h2>
+                      <p>Fruits Expert</p>
+                      <p>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter px-2"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- card-3 -->
+                  <div class="card bg-transparent">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/member3.png"
+                        alt="Shoes"
+                        class="rounded-xl"
+                      />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="text-2xl font-bold">Rokib Hossain</h2>
+                      <p>Fruits Expert</p>
+                      <p>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter px-2"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- card-4 -->
+                  <div class="card bg-transparent">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./images/member4.png"
+                        alt="Shoes"
+                        class="rounded-xl"
+                      />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="text-2xl font-bold">Chaity</h2>
+                      <p>Fruits Expert</p>
+                      <p>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter px-2"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
